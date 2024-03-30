@@ -19,4 +19,9 @@ class EmployeeSalary extends Model
         'da',
         'disbursed_on',
     ];
+
+    public function employee()
+    {
+    return $this->belongsTo(EmployeeMaster::class);
+    }
 }

@@ -17,4 +17,10 @@ class EmployeeMaster extends Model
         'aadhaar_number',
         'status',
     ];
+
+    public function salaries()
+    {
+    return $this->hasMany(EmployeeSalary::class);
+    }
+
 }
